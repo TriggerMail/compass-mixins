@@ -77,7 +77,6 @@
   @return nth($list, 1);
 }
 
-@if not(function-exists(compact)) {
   @function compact($args...) {
     $first: nth($args, 1);
     $sep: comma;
@@ -98,4 +97,3 @@
 
     @return $list;
   }
-}
